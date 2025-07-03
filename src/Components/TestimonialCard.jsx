@@ -21,9 +21,9 @@ const TestimonialCard = () => {
           <LuQuote className="text-4xl opacity-20" />
         </div>
         <p className="text-md text-left text-gray-600">
-          Investing in GreenAcres was the best decision I made. The returns have
-          exceeded my expectations, and the professional management takes care
-          of everything. My mango trees are thriving!
+          Investing in Panchavati Farms was the best decision I made. The
+          returns have exceeded my expectations, and the professional management
+          takes care of everything. My mango trees are thriving!
         </p>
       </div>
       <figure className="relative my-3 flex items-center gap-3 overflow-hidden text-left">

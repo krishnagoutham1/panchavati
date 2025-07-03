@@ -1,8 +1,8 @@
 #root {
-  /* max-width: 1280px; */
   margin: 0 auto;
   text-align: center;
-  /* max-width: 100vw; */
+  overflow: hidden;
+  background-color: rgb(195, 238, 208);
 }
 
 @keyframes logo-spin {

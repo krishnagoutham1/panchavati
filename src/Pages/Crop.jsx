@@ -4,33 +4,31 @@ import { CropDetails } from "../Utils/staticData";
 import { LiaCertificateSolid } from "react-icons/lia";
 const Crop = () => {
   return (
-    <section id="crops" className="bg-cyan-50 ">
-      <div className="py-5">
-        <HeadingText
-          name="Premium Crop Varieties"
-          description="   Our carefully selected crop varieties are chosen for their high yield
+    <section id="crops" className="section-container">
+      <HeadingText
+        name="Premium Crop Varieties"
+        description="Our carefully selected crop varieties are chosen for their high yield
           potential, market demand, and adaptability to local growing
           conditions."
-        />
-      </div>
-      <div className="flex justify-evenly flex-wrap gap-5 max-w-7xl mx-auto">
+      />
+
+      <div className="mx-auto grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
         {CropDetails.map((crop) => {
           return <CropCard key={crop.id} data={crop} />;
         })}
       </div>
-      <div className="max-w-7xl mx-auto bg-green-700 text-white py-6 my-16 rounded-2xl">
-        <div className="max-w-2xl mx-auto mb-5">
-          <h2 className="flex items-center justify-center my-5 text-2xl gap-4 font-bold">
-            <span className="text-5xl">
-              <LiaCertificateSolid />
-            </span>
-            Certified Organic Practices
-          </h2>
-          <p className="text-lg font-semibold">
-            All our crops are grown using sustainable, organic farming methods
-            with proper certification and regular quality monitoring.
-          </p>
-        </div>
+
+      <div className="rounded-2xl bg-green-600 p-8 text-center text-white">
+        <h3 className="mb-4 flex items-center justify-center gap-4 text-xl font-bold lg:text-2xl">
+          <span className="text-5xl">
+            <LiaCertificateSolid />
+          </span>
+          Certified Organic Practices
+        </h3>
+        <p className="text-md mx-auto mb-6 max-w-2xl opacity-90 md:text-lg">
+          All our crops are grown using sustainable, organic farming methods
+          with proper certification and regular quality monitoring.
+        </p>
       </div>
     </section>
   );

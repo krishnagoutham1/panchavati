@@ -1,26 +1,26 @@
 import PropTypes from "prop-types";
 const CropCard = ({ data }) => {
   const { name, image, description, maturity, season, yield: yieldType } = data;
-  console.log(name);
+
   return (
-    <div className="max-w-sm md:max-w-xs lg:max-w-2xs bg-cyan-200 overflow-hidden rounded-2xl shadow-2xl hover:-translate-y-2 duration-400 text-left">
+    <div className="group mx-auto mb-8 overflow-hidden rounded-2xl bg-white text-left shadow-2xl duration-400 hover:-translate-y-2 md:max-w-xs lg:mb-12 lg:max-w-2xs">
       <div className="relative">
         <img
-          className="hover:scale-110 duration-400 h-48 object-cover w-full bg-center"
+          className="h-48 w-full bg-center object-cover duration-400 group-hover:scale-110"
           src={image}
         />
-        <div className="absolute top-4 right-4 bg-green-700 px-3 rounded-3xl text-white text-md font-semibold">
+        <div className="text-md absolute top-4 right-4 rounded-3xl bg-green-700 px-3 font-semibold text-white">
           {yieldType}
         </div>
       </div>
-      <div className="p-4 space-y-3">
+      <div className="space-y-2 p-4 lg:space-y-3">
         <h2 className="text-2xl">{name}</h2>
-        <p className="text-gray-600 text-md">{description}</p>
-        <div className="flex justify-between text-md">
+        <p className="text-md text-gray-600">{description}</p>
+        <div className="text-md flex justify-between">
           <span className="text-gray-600">Maturity</span>
           <span>{maturity}</span>
         </div>
-        <div className="flex justify-between text-md">
+        <div className="text-md flex justify-between">
           <span className="text-gray-600">Season</span>
           <span>{season}</span>
         </div>

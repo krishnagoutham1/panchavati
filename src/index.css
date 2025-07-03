@@ -9,11 +9,11 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #018632c9;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #22c55e;
+  background: #00ff37;
   border-radius: 4px;
 }
 
@@ -25,12 +25,4 @@ html {
   max-width: 1280px;
   margin: 0 auto;
   padding: 16px;
-}
-
-.primary-color {
-  color: salmon;
-}
-
-@theme {
-  --color-primary: oklch(52.7% 0.154 150.069);
 }

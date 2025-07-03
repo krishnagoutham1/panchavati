@@ -6,7 +6,7 @@ const Testimonials = () => {
     <section id="testimonials" className="section-container">
       <HeadingText
         name="What Our Investors Say"
-        description="Don't just take our word for it. Here's what our satisfied plot owners have to say about their experience with GreenAcres."
+        description="Don't just take our word for it. Here's what our satisfied plot owners have to say about their experience with Panchavati Farms."
       />
       <div className="mb-16 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         <TestimonialCard />
