@@ -31,26 +31,26 @@ const Contact = () => {
     });
   };
   return (
-    <section id="contact" className="bg-blue-100">
+    <section id="contact" className="section-container">
       <HeadingText
         name="Get In Touch"
         description="Ready to start your agricultural investment journey? Contact us today for a personalized consultation and site visit."
       />
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 mx-auto max-w-7xl gap-5">
+      <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
         <div className="space-y-8">
           <div>
-            <h3 className="text-2xl font-bold text-nature-brown-900 mb-6">
+            <h3 className="text-nature-brown-900 mb-6 text-2xl font-bold">
               Contact Information
             </h3>
 
             <div className="space-y-6 text-left">
               <div className="flex items-start gap-4">
-                <div className="bg-nature-green-100 p-3 rounded-lg">
-                  <FaPhone className="h-6 w-6 text-nature-green-600" />
+                <div className="bg-nature-green-100 rounded-lg p-3">
+                  <FaPhone className="text-nature-green-600 h-6 w-6" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-nature-brown-800 mb-1">
+                  <h4 className="text-nature-brown-800 mb-1 font-semibold">
                     Phone
                   </h4>
                   <p className="text-nature-brown-600">+91 98765 43210</p>
@@ -59,11 +59,11 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="bg-nature-green-100 p-3 rounded-lg">
-                  <MdMailOutline className="h-6 w-6 text-nature-green-600" />
+                <div className="bg-nature-green-100 rounded-lg p-3">
+                  <MdMailOutline className="text-nature-green-600 h-6 w-6" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-nature-brown-800 mb-1">
+                  <h4 className="text-nature-brown-800 mb-1 font-semibold">
                     Email
                   </h4>
                   <p className="text-nature-brown-600">info@Panchavati .com</p>
@@ -72,11 +72,11 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="bg-nature-green-100 p-3 rounded-lg">
-                  <FaLocationDot className="h-6 w-6 text-nature-green-600" />
+                <div className="bg-nature-green-100 rounded-lg p-3">
+                  <FaLocationDot className="text-nature-green-600 h-6 w-6" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-nature-brown-800 mb-1">
+                  <h4 className="text-nature-brown-800 mb-1 font-semibold">
                     Address
                   </h4>
                   <p className="text-nature-brown-600">
@@ -90,11 +90,11 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="bg-nature-green-100 p-3 rounded-lg">
-                  <FaRegClock className="h-6 w-6 text-nature-green-600" />
+                <div className="bg-nature-green-100 rounded-lg p-3">
+                  <FaRegClock className="text-nature-green-600 h-6 w-6" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-nature-brown-800 mb-1">
+                  <h4 className="text-nature-brown-800 mb-1 font-semibold">
                     Office Hours
                   </h4>
                   <p className="text-nature-brown-600">
@@ -112,15 +112,15 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="bg-white/80 rounded-2xl shadow-lg p-8">
-          <h3 className="text-2xl font-bold text-nature-brown-900 mb-6">
+        <div className="rounded-2xl bg-white/80 p-8 shadow-lg">
+          <h3 className="text-nature-brown-900 mb-6 text-2xl font-bold">
             Send us a Message
           </h3>
 
           {isSubmitted ? (
-            <div className="text-center relative top-1/4">
-              <FiCheckCircle className="h-16 w-16 text-nature-green-500 mx-auto mb-4" />
-              <h4 className="text-xl font-bold text-nature-green-600 mb-2">
+            <div className="relative top-1/4 text-center">
+              <FiCheckCircle className="text-nature-green-500 mx-auto mb-4 h-16 w-16" />
+              <h4 className="text-nature-green-600 mb-2 text-xl font-bold">
                 Thank You!
               </h4>
               <p className="text-nature-brown-600">
@@ -130,11 +130,11 @@ const Contact = () => {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-sm font-medium text-nature-brown-700 mb-2"
+                    className="text-nature-brown-700 mb-2 block text-sm font-medium"
                   >
                     Full Name *
                   </label>
@@ -145,7 +145,7 @@ const Contact = () => {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-nature-brown-200 rounded-lg focus:ring-2 focus:ring-nature-green-500 focus:border-transparent transition-colors"
+                    className="border-nature-brown-200 focus:ring-nature-green-500 w-full rounded-lg border px-4 py-3 transition-colors focus:border-transparent focus:ring-2"
                     placeholder="Enter your full name"
                   />
                 </div>
@@ -153,7 +153,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-sm font-medium text-nature-brown-700 mb-2"
+                    className="text-nature-brown-700 mb-2 block text-sm font-medium"
                   >
                     Email Address *
                   </label>
@@ -164,17 +164,17 @@ const Contact = () => {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-nature-brown-200 rounded-lg focus:ring-2 focus:ring-nature-green-500 focus:border-transparent transition-colors"
+                    className="border-nature-brown-200 focus:ring-nature-green-500 w-full rounded-lg border px-4 py-3 transition-colors focus:border-transparent focus:ring-2"
                     placeholder="Enter your email"
                   />
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                 <div>
                   <label
                     htmlFor="phone"
-                    className="block text-sm font-medium text-nature-brown-700 mb-2"
+                    className="text-nature-brown-700 mb-2 block text-sm font-medium"
                   >
                     Phone Number *
                   </label>
@@ -185,7 +185,7 @@ const Contact = () => {
                     required
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-nature-brown-200 rounded-lg focus:ring-2 focus:ring-nature-green-500 focus:border-transparent transition-colors"
+                    className="border-nature-brown-200 focus:ring-nature-green-500 w-full rounded-lg border px-4 py-3 transition-colors focus:border-transparent focus:ring-2"
                     placeholder="Enter your phone number"
                   />
                 </div>
@@ -193,7 +193,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="plotSize"
-                    className="block text-sm font-medium text-nature-brown-700 mb-2"
+                    className="text-nature-brown-700 mb-2 block text-sm font-medium"
                   >
                     Interested Plot Size
                   </label>
@@ -202,7 +202,7 @@ const Contact = () => {
                     name="plotSize"
                     value={formData.plotSize}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-nature-brown-200 rounded-lg focus:ring-2 focus:ring-nature-green-500 focus:border-transparent transition-colors"
+                    className="border-nature-brown-200 focus:ring-nature-green-500 w-full rounded-lg border px-4 py-3 transition-colors focus:border-transparent focus:ring-2"
                   >
                     <option value="">Select plot size</option>
                     <option value="1-acre">1 Acre - Starter Plot</option>
@@ -216,7 +216,7 @@ const Contact = () => {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-nature-brown-700 mb-2"
+                  className="text-nature-brown-700 mb-2 block text-sm font-medium"
                 >
                   Message
                 </label>
@@ -226,14 +226,14 @@ const Contact = () => {
                   rows={4}
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-nature-brown-200 rounded-lg focus:ring-2 focus:ring-nature-green-500 focus:border-transparent transition-colors resize-none"
+                  className="border-nature-brown-200 focus:ring-nature-green-500 w-full resize-none rounded-lg border px-4 py-3 transition-colors focus:border-transparent focus:ring-2"
                   placeholder="Tell us about your requirements or any questions you have..."
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-green-600 hover:bg-nature-green-700 text-white py-3 px-6 rounded-lg font-semibold transition-colors duration-300 flex items-center justify-center gap-2"
+                className="hover:bg-nature-green-700 flex w-full items-center justify-center gap-2 rounded-lg bg-green-600 px-6 py-3 font-semibold text-white transition-colors duration-300"
               >
                 <BsFillSendFill className="h-5 w-5" />
                 Send Message
@@ -243,13 +243,13 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="bg-green-600 rounded-2xl p-6 text-white mx-auto max-w-7xl my-8">
-        <h4 className="text-xl font-bold mb-4">Schedule a Site Visit</h4>
-        <p className="mb-4 opacity-90">
+      <div className="rounded-2xl bg-green-600 p-8 text-center text-white">
+        <h4 className="mb-4 text-2xl font-bold">Schedule a Site Visit</h4>
+        <p className="text-md mx-auto mb-6 max-w-2xl opacity-90 md:text-lg">
           Experience our plots firsthand with a guided tour. See the crops,
           facilities, and infrastructure up close.
         </p>
-        <button className="bg-white text-black text-nature-green-600 px-6 py-2 rounded-lg font-semibold hover:bg-nature-green-50 transition-colors">
+        <button className="cursor-pointer rounded-lg bg-white px-6 py-2 font-semibold text-black transition-all duration-400 hover:bg-transparent hover:text-white hover:outline">
           Book Site Visit
         </button>
       </div>

@@ -4,10 +4,10 @@ import { MdOutlineComment } from "react-icons/md";
 
 const TestimonialCard = () => {
   return (
-    <div className="relative mx-auto rounded-2xl bg-amber-100 p-5">
+    <div className="relative rounded-2xl bg-amber-100 p-5">
       <img
         src="/logo.png"
-        className="pointer-none: absolute top-1/2 left-1/2 w-56 -translate-x-1/2 -translate-y-1/2 transform opacity-4"
+        className="absolute top-1/2 left-1/2 w-56 -translate-x-1/2 -translate-y-1/2 transform opacity-4"
       />
       <span className="mb-4 ml-4 flex text-2xl text-amber-400">
         <MdOutlineStarPurple500 />
