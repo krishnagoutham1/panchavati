@@ -25,13 +25,9 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="rounded-xl border-2 border-green-500 px-16 py-8">
-      <h3 className="mb-6 text-center text-2xl font-bold text-green-500">
-        Send us a Message
-      </h3>
-
+    <div className="h-full rounded-xl border-2 border-green-500 px-4 py-8 md:px-8 lg:px-16">
       {isSubmitted && (
-        <div className="relative top-1/4 text-center">
+        <div className="relative top-1/4 h-full text-center">
           <FiCheckCircle className="mx-auto mb-4 h-16 w-16 text-green-500" />
           <h4 className="mb-2 text-xl font-bold text-green-600">Thank You!</h4>
           <p>
@@ -43,6 +39,9 @@ const ContactForm = () => {
 
       {!isSubmitted && (
         <form onSubmit={handleSubmit} className="space-y-6">
+          <h3 className="mb-4 text-center text-lg font-bold text-green-500 md:mb-6 md:text-2xl">
+            Send us a Message
+          </h3>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             <div>
               <label htmlFor="name" className="mb-2 block text-sm font-medium">

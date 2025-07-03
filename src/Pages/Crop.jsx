@@ -19,7 +19,7 @@ const Crop = () => {
       </div>
 
       <div className="rounded-2xl bg-green-600 p-8 text-center text-white">
-        <h3 className="mb-4 flex items-center justify-center gap-4 text-xl font-bold lg:text-2xl">
+        <h3 className="mb-4 flex items-center justify-center gap-2 text-xl font-bold lg:gap-4 lg:text-2xl">
           <span className="text-5xl">
             <LiaCertificateSolid />
           </span>

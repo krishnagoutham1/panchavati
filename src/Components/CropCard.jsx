@@ -14,7 +14,7 @@ const CropCard = ({ data }) => {
         </div>
       </div>
       <div className="space-y-2 p-4 lg:space-y-3">
-        <h2 className="text-2xl">{name}</h2>
+        <h2 className="text-2xl font-semibold">{name}</h2>
         <p className="text-md text-gray-600">{description}</p>
         <div className="text-md flex justify-between">
           <span className="text-gray-600">Maturity</span>
