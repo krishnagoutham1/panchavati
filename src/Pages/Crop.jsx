@@ -2,6 +2,7 @@ import CropCard from "../Components/CropCard";
 import HeadingText from "../Components/HeadingText";
 import { CropDetails } from "../Utils/staticData";
 import { LiaCertificateSolid } from "react-icons/lia";
+
 const Crop = () => {
   return (
     <section id="crops" className="section-container">
@@ -20,7 +21,7 @@ const Crop = () => {
 
       <div className="rounded-2xl bg-green-600 p-8 text-center text-white">
         <h3 className="mb-4 flex items-center justify-center gap-2 text-xl font-bold lg:gap-4 lg:text-2xl">
-          <span className="text-5xl">
+          <span className="text-3xl lg:text-5xl">
             <LiaCertificateSolid />
           </span>
           Certified Organic Practices

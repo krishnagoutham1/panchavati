@@ -5,7 +5,7 @@ import { FaFacebookF } from "react-icons/fa";
 
 const SocialLinks = () => {
   return (
-    <div className="flex items-center gap-8">
+    <div className="flex items-center justify-evenly gap-8">
       <a
         href="https://wa.me/yourNumber"
         target="_blank"

@@ -58,7 +58,7 @@ const ContactDetails = () => {
         </div>
       </div>
 
-      <div className="p-3">
+      <div className="max-w-xs p-3">
         <h3 className="mb-5 text-xl font-bold">Follow Us </h3>
         <SocialLinks />
       </div>

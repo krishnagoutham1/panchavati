@@ -15,7 +15,7 @@ const Contact = () => {
         <ContactForm />
       </div>
 
-      <div className="rounded-2xl bg-green-600 p-8 text-center text-white">
+      <div className="mb-16 rounded-2xl bg-green-600 p-8 text-center text-white">
         <h4 className="mb-4 text-2xl font-bold">Schedule a Site Visit</h4>
         <p className="text-md mx-auto mb-6 max-w-2xl opacity-90 md:text-lg">
           Experience our plots firsthand with a guided tour. See the crops,
