@@ -11,18 +11,26 @@ export const navItems = [
   { name: "Home", href: "#home" },
   { name: "Plantation", href: "#crops" },
   { name: "Facilities", href: "#facilities" },
-  { name: "Plot Plans", href: "#plots" },
   { name: "Gallery", href: "#gallery" },
   { name: "Testimonials", href: "#testimonials" },
   { name: "Contact", href: "#contact" },
 ];
 
+import CoconutImage from "../assets/crops/coconut.jpg";
+import MangoImage from "../assets/crops/mango.jpg";
+import WaterAppleImage from "../assets/crops/waterApple.png";
+import GuavaImage from "../assets/crops/guava.jpg";
+import BlackJamunImage from "../assets/crops/black-jamun.png";
+import JackFruitImage from "../assets/crops/jack-fruit.png";
+import LemonImage from "../assets/crops/lemon.jpg";
+import CurryLeafImage from "../assets/crops/curry-leaf.png";
+import FarmInfraImage from "../assets/farm-infra.png";
+
 export const CropDetails = [
   {
     id: 1,
     name: "Coconut",
-    image:
-      "https://images.pexels.com/photos/918327/pexels-photo-918327.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: CoconutImage,
     maturity: "6-10 years",
     yield: "High",
     season: "Summer",
@@ -32,8 +40,7 @@ export const CropDetails = [
   {
     id: 2,
     name: "Mango",
-    image:
-      "https://images.pexels.com/photos/1002703/pexels-photo-1002703.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: MangoImage,
     maturity: "3-5 years",
     yield: "High",
     season: "Summer",
@@ -43,8 +50,7 @@ export const CropDetails = [
   {
     id: 3,
     name: "Water Apple",
-    image:
-      "https://images.pexels.com/photos/5966630/pexels-photo-5966630.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: WaterAppleImage,
     maturity: "1-2 years",
     yield: "Very High",
     season: "Summer",
@@ -54,8 +60,7 @@ export const CropDetails = [
   {
     id: 4,
     name: "Guava",
-    image:
-      "https://images.pexels.com/photos/1263348/pexels-photo-1263348.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: GuavaImage,
     maturity: "1-2 years",
     yield: "High",
     season: "Year-round",
@@ -65,8 +70,7 @@ export const CropDetails = [
   {
     id: 5,
     name: "Black Jamun",
-    image:
-      "https://images.pexels.com/photos/2294471/pexels-photo-2294471.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: BlackJamunImage,
     maturity: "2-3 years",
     yield: "Moderate",
     season: "Summer",
@@ -76,8 +80,7 @@ export const CropDetails = [
   {
     id: 6,
     name: "Jack Fruit",
-    image:
-      "https://images.pexels.com/photos/1435735/pexels-photo-1435735.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: JackFruitImage,
     maturity: "3-4 years",
     yield: "High",
     season: "Summer",
@@ -87,8 +90,7 @@ export const CropDetails = [
   {
     id: 7,
     name: "Lemon",
-    image:
-      "https://images.pexels.com/photos/5966631/pexels-photo-5966631.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: LemonImage,
     maturity: "2-3 years",
     yield: "Good",
     season: "Year-round",
@@ -98,8 +100,7 @@ export const CropDetails = [
   {
     id: 8,
     name: "Curry Leaf",
-    image:
-      "https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: CurryLeafImage,
     maturity: "1.5-2 years",
     yield: "Moderate",
     season: "Year-round",
@@ -167,110 +168,49 @@ export const FacilitiesDetails = [
   },
 ];
 
-export const plotPlans = [
-  {
-    id: 1,
-    name: "Starter Plot",
-    size: "1 Acre",
-    price: "₹12,50,000",
-    features: [
-      "4-5 Mango Trees",
-      "20 Coconut Trees",
-      "Basic Drip Irrigation",
-      "Boundary Fencing",
-      "Road Access",
-      "1 Year Maintenance",
-    ],
-    popular: false,
-    image:
-      "https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=600",
-  },
-
-  {
-    id: 2,
-    name: "Premium Plot",
-    size: "2.5 Acres",
-    price: "₹28,75,000",
-    features: [
-      "10-12 Mango Trees",
-      "50 Coconut Trees",
-      "100 Banana Plants",
-      "Advanced Irrigation",
-      "Guest Cottage",
-      "Solar Power Setup",
-      "2 Years Maintenance",
-      "Farm Management Support",
-    ],
-    popular: true,
-    image:
-      "https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=600",
-  },
-
-  {
-    id: 3,
-    name: "Estate Plot",
-    size: "5 Acres",
-    price: "₹55,00,000",
-    features: [
-      "20-25 Mango Trees",
-      "100 Coconut Trees",
-      "200 Banana Plants",
-      "Mixed Fruit Orchard",
-      "Luxury Cottage",
-      "Complete Solar System",
-      "Water Harvesting",
-      "3 Years Full Maintenance",
-      "Dedicated Farm Manager",
-    ],
-    popular: false,
-    image:
-      "https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=600",
-  },
-];
-
 export const galleryData = [
   {
-    src: "https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=800",
+    src: CoconutImage,
     info: "Mango plantation with mature trees",
     category: "Crops",
   },
   {
-    src: "https://images.pexels.com/photos/1002703/pexels-photo-1002703.jpeg?auto=compress&cs=tinysrgb&w=800",
+    src: MangoImage,
     info: "Coconut grove with irrigation system",
     category: "Infrastructure",
   },
   {
-    src: "https://images.pexels.com/photos/5966630/pexels-photo-5966630.jpeg?auto=compress&cs=tinysrgb&w=800",
+    src: WaterAppleImage,
     info: "Banana plantation in full bloom",
     category: "Crops",
   },
   {
-    src: "https://images.pexels.com/photos/1263348/pexels-photo-1263348.jpeg?auto=compress&cs=tinysrgb&w=800",
+    src: GuavaImage,
     info: "Modern guest cottage",
     category: "Facilities",
   },
   {
-    src: "https://images.pexels.com/photos/2294471/pexels-photo-2294471.jpeg?auto=compress&cs=tinysrgb&w=800",
+    src: BlackJamunImage,
     info: "Drip irrigation system in action",
     category: "Infrastructure",
   },
   {
-    src: "https://images.pexels.com/photos/1435735/pexels-photo-1435735.jpeg?auto=compress&cs=tinysrgb&w=800",
+    src: JackFruitImage,
     info: "Pomegranate orchard",
     category: "Crops",
   },
   {
-    src: "https://images.pexels.com/photos/5966631/pexels-photo-5966631.jpeg?auto=compress&cs=tinysrgb&w=800",
+    src: LemonImage,
     info: "Security fencing and entrance",
     category: "Infrastructure",
   },
   {
-    src: "https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg?auto=compress&cs=tinysrgb&w=800",
+    src: CurryLeafImage,
     info: "Dragon fruit cultivation",
     category: "Crops",
   },
   {
-    src: "https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=800",
+    src: FarmInfraImage,
     info: "Solar power installation",
     category: "Facilities",
   },

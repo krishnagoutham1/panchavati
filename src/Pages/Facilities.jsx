@@ -4,6 +4,7 @@ import { FacilitiesDetails } from "../Utils/staticData";
 import { GiCctvCamera } from "react-icons/gi";
 import { MdEnergySavingsLeaf } from "react-icons/md";
 import { FaHandHoldingWater } from "react-icons/fa";
+import FarmInfraImage from "../assets/farm-infra.png";
 
 const Facilities = () => {
   return (
@@ -50,7 +51,7 @@ const Facilities = () => {
         </div>
         <div>
           <img
-            src="https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=800"
+            src={FarmInfraImage}
             alt="Modern farm facilities"
             className="rounded-2xl shadow-lg w-full max-h-80 object-cover max-w-xl"
           />

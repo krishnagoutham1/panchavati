@@ -1,3 +1,5 @@
+import HeroImage from "../assets/hero.jpg";
+
 const Home = () => {
   return (
     <>
@@ -8,12 +10,12 @@ const Home = () => {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage:
-              "url(https://cdn.britannica.com/83/7083-050-EAE0CF87/wheat-farm-grain-belt-Saskatoon-Saskatchewan-Canada.jpg)",
+            backgroundImage: `url(${HeroImage})`,
           }}
         >
-          <div className="absolute inset-0 bg-green-900/10"></div>
+          {/* <div className="absolute inset-0 bg-black/0"></div> */}
         </div>
+
         <div className="z-1 max-w-4xl text-white space-y-8">
           <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold">
             Own Your Piece of

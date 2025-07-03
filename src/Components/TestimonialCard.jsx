@@ -4,12 +4,12 @@ import { MdOutlineComment } from "react-icons/md";
 
 const TestimonialCard = () => {
   return (
-    <div className="bg-yellow-100 mx-auto p-5 rounded-2xl relative">
+    <div className="relative mx-auto rounded-2xl bg-amber-100 p-5">
       <img
         src="/logo.png"
-        className="absolute w-56 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-4 pointer-none:"
+        className="pointer-none: absolute top-1/2 left-1/2 w-56 -translate-x-1/2 -translate-y-1/2 transform opacity-4"
       />
-      <span className="flex text-amber-400 text-2xl mb-4 ml-4">
+      <span className="mb-4 ml-4 flex text-2xl text-amber-400">
         <MdOutlineStarPurple500 />
         <MdOutlineStarPurple500 />
         <MdOutlineStarPurple500 />
@@ -18,24 +18,24 @@ const TestimonialCard = () => {
       </span>
       <div className="flex gap-2">
         <div>
-          <LuQuote className="opacity-20 text-4xl" />
+          <LuQuote className="text-4xl opacity-20" />
         </div>
-        <p className="text-left text-md text-gray-600">
+        <p className="text-md text-left text-gray-600">
           Investing in GreenAcres was the best decision I made. The returns have
           exceeded my expectations, and the professional management takes care
           of everything. My mango trees are thriving!
         </p>
       </div>
-      <figure className="overflow-hidden flex items-center gap-3 text-left relative my-3">
+      <figure className="relative my-3 flex items-center gap-3 overflow-hidden text-left">
         <img
           src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150"
-          className="object-cover rounded-full  w-12 h-12"
+          className="h-12 w-12 rounded-full object-cover"
         />
         <figcaption>
           <h2 className="text-lg font-bold">Jhon deo</h2>
           <p className="text-md text-gray-400">Mumbai</p>
         </figcaption>
-        <MdOutlineComment className="text-right absolute right-4 opacity-10 text-4xl" />
+        <MdOutlineComment className="absolute right-4 text-right text-4xl opacity-10" />
       </figure>
     </div>
   );

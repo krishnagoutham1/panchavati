@@ -5,7 +5,6 @@ import Facilities from "./Pages/Facilities";
 import Gallery from "./Pages/Gallery";
 import Header from "./Pages/Header";
 import Home from "./Pages/Home";
-import Plans from "./Pages/Plans";
 import Testimonials from "./Pages/Testimonials";
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
       <Crop />
 
       <Facilities />
-      <Plans />
 
       <Gallery />
       <Testimonials />
