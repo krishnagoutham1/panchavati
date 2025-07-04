@@ -1,5 +1,5 @@
 import HeroImage from "../assets/hero.jpg";
-
+import PanchavatiPdf from "../assets/PANCHAVATI FARMS.pdf";
 const Home = () => {
   return (
     <>
@@ -13,7 +13,7 @@ const Home = () => {
             backgroundImage: `url(${HeroImage})`,
           }}
         >
-          {/* <div className="absolute inset-0 bg-black/0"></div> */}
+          <div className="absolute inset-0 bg-black/20"></div>
         </div>
 
         <div className="z-1 max-w-4xl space-y-8 text-white">
@@ -27,11 +27,18 @@ const Home = () => {
             agricultural prosperity today.
           </p>
           <div className="mx-auto flex max-w-3xs flex-col justify-center gap-5 md:max-w-2xl md:flex-row">
-            <button className="sm:text-md rounded-4xl border-3 border-green-800 bg-green-800 px-6 py-3 text-xl font-semibold">
-              Explore Plots
-            </button>
+            <a
+              href={PanchavatiPdf}
+              target="_blank"
+              download
+              className="sm:text-md rounded-4xl border-3 border-green-800 bg-green-800 px-6 py-3 text-xl font-semibold"
+            >
+              Broacher
+            </a>
             <button className="sm:text-md cursor-pointer rounded-4xl border-3 px-6 py-3 text-xl font-semibold transition-all duration-500 hover:border-white hover:bg-white hover:text-black">
-              Schedule Visit
+              <a href={PanchavatiPdf} target="_blank">
+                View
+              </a>
             </button>
           </div>
         </div>

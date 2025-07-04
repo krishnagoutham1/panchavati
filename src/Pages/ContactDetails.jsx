@@ -23,8 +23,7 @@ const ContactDetails = () => {
         </div>
         <div>
           <h4 className="mb-1 font-semibold">Email</h4>
-          <p>info@Panchavati.com</p>
-          <p>sales@Panchavati.com</p>
+          <p>panchavati@gmail.com</p>
         </div>
       </div>
 

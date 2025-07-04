@@ -94,7 +94,7 @@ const Footer = () => {
                   <FaPhone className="h-6 w-6 text-green-600" />
                 </div>
                 <div>
-                  <p>+91 98765 43210</p>
+                  <p>+91 84640 33555</p>
                 </div>
               </div>
 
@@ -103,7 +103,7 @@ const Footer = () => {
                   <MdMailOutline className="h-6 w-6 text-green-600" />
                 </div>
                 <div>
-                  <p className="text-nature-beige">info@panchavati.com</p>
+                  <p className="text-nature-beige">panchavati@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -119,13 +119,6 @@ const Footer = () => {
             </div>
 
             <div className="text-nature-beige flex space-x-6 text-sm">
-              <a href="#">Privacy Policy</a>
-              <a
-                href="#"
-                className="transition-colors duration-300 hover:text-white"
-              >
-                Terms of Service
-              </a>
               <a
                 href="#"
                 className="transition-colors duration-300 hover:text-white"
