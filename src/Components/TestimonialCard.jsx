@@ -1,6 +1,7 @@
 import { LuQuote } from "react-icons/lu";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import { MdOutlineComment } from "react-icons/md";
+import Avatar from "../assets/avatar.png";
 
 const TestimonialCard = () => {
   return (
@@ -28,12 +29,12 @@ const TestimonialCard = () => {
       </div>
       <figure className="relative my-3 flex items-center gap-3 overflow-hidden text-left">
         <img
-          src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150"
-          className="h-12 w-12 rounded-full object-cover"
+          src={Avatar}
+          className="h-12 w-12 rounded-full bg-white object-cover"
         />
         <figcaption>
-          <h2 className="text-lg font-bold">Jhon deo</h2>
-          <p className="text-md text-gray-400">Mumbai</p>
+          <h2 className="text-lg font-bold">Jhon </h2>
+          <p className="text-md text-gray-400">Hyderabad</p>
         </figcaption>
         <MdOutlineComment className="absolute right-4 text-right text-4xl opacity-10" />
       </figure>

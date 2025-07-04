@@ -1,5 +1,8 @@
 import HeroImage from "../assets/hero.jpg";
 import PanchavatiPdf from "../assets/PANCHAVATI FARMS.pdf";
+import { FaArrowDown } from "react-icons/fa";
+import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
+
 const Home = () => {
   return (
     <>
@@ -31,15 +34,20 @@ const Home = () => {
               href={PanchavatiPdf}
               target="_blank"
               download
-              className="sm:text-md rounded-4xl border-3 border-green-800 bg-green-800 px-6 py-3 text-xl font-semibold"
+              className="sm:text-md flex items-center gap-4 rounded-4xl border-3 border-green-800 bg-green-800 px-6 py-3 text-xl font-semibold"
             >
-              Broacher
+              <FaArrowDown /> Broacher
             </a>
-            <button className="sm:text-md cursor-pointer rounded-4xl border-3 px-6 py-3 text-xl font-semibold transition-all duration-500 hover:border-white hover:bg-white hover:text-black">
-              <a href={PanchavatiPdf} target="_blank">
-                View
-              </a>
-            </button>
+            <a
+              href={PanchavatiPdf}
+              target="_blank"
+              className="sm:text-md cursor-pointer rounded-4xl border-3 px-6 py-3 text-xl font-semibold transition-all duration-500 hover:border-white hover:bg-white hover:text-black"
+            >
+              View
+            </a>
+          </div>
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 transform animate-bounce">
+            <MdOutlineKeyboardDoubleArrowDown className="text-4xl text-white/80" />
           </div>
         </div>
       </section>

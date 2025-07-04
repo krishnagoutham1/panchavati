@@ -1,6 +1,15 @@
 import { useState } from "react";
 import { FiCheckCircle } from "react-icons/fi";
 import { BsFillSendFill } from "react-icons/bs";
+import axios from "axios";
+import { toast, ToastContainer } from "react-toastify";
+
+const {
+  VITE_SERVICE_ID,
+  VITE_TEMPLATE_ID,
+  VITE_PUBLIC_ID,
+  VITE_EMAIL_BASE_URL,
+} = import.meta.env;
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -12,9 +21,54 @@ const ContactForm = () => {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsSubmitted(true);
+    const data = {
+      service_id: VITE_SERVICE_ID,
+      template_id: VITE_TEMPLATE_ID,
+      user_id: VITE_PUBLIC_ID,
+      template_params: {
+        user_name: formData.name,
+        user_mobile: formData.phone,
+        user_email: formData.email,
+        message: formData.message,
+      },
+    };
+    try {
+      const { status } = await axios.post(VITE_EMAIL_BASE_URL, data);
+      status === 200 && setIsSubmitted(true);
+      toast.success("Response Received !", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        type: "success",
+      });
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        plotSize: "",
+        message: "",
+      });
+    } catch (err) {
+      console.log(err);
+      toast.error("Failed, Please try after Sometime !", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        type: "error",
+      });
+    }
   };
 
   const handleChange = (e) => {
@@ -26,8 +80,26 @@ const ContactForm = () => {
 
   return (
     <div className="h-full rounded-xl border-2 border-green-500 px-4 py-8 md:px-8 lg:px-16">
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       {isSubmitted && (
-        <div className="relative top-1/4 h-full text-center">
+        <div className="relative h-full py-16 text-center lg:pt-24">
+          <p
+            className="absolute top-5 left-5 text-xl font-semibold text-blue-500"
+            onClick={() => setIsSubmitted(false)}
+          >
+            &#8592; Return
+          </p>
           <FiCheckCircle className="mx-auto mb-4 h-16 w-16 text-green-500" />
           <h4 className="mb-2 text-xl font-bold text-green-600">Thank You!</h4>
           <p>
